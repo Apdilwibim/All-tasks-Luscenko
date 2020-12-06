@@ -1,0 +1,98 @@
+.container  {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #444;
+}
+
+.block {
+    width: 75px;
+    height: 75px;
+    margin: 25px;
+    border: 2px solid #333;
+}
+
+.active {
+    background: orange;
+}
+
+.hide {
+    display: none;
+}
+
+.keyboard {
+    width: 600px;
+    margin: 10px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.numbers, .symbols {
+    margin-top: 5px;
+    width: 482px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.number, .symbol, .enter, .shift, .space, .capslock {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(white, gray);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0px 2px 5px gray;
+}
+
+.symbol:nth-child(n+1) {
+    margin: 5px 4px 0 4px;
+}
+
+.symbol:nth-child(n+11) {
+    margin: 10px 5px 0 5px;
+}
+
+.symbol:nth-child(n+20):nth-child(-n+20) {
+    margin-left: 25px;
+}
+
+.symbol:nth-child(n+26):nth-child(-n+26) {
+    margin-right: 25px;
+}
+
+.active {
+    transition: 1s;
+    background: rgba(0,0,0, 0.6);
+    color: white;
+}
+
+.enter {
+    margin: 5px 0 0 10px;
+    width: 100px;
+    height: 192px;
+}
+
+.shift {
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.space {
+    width: 360px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.capslock {
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
